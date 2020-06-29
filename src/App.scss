@@ -1,0 +1,48 @@
+$button: #4d4d4d;
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+$button-width: 80px;
+$button-height: 65px;
+
+#calculator {
+  margin: 80px auto;
+  border: 2px solid #47476b;
+  //padding: 5px;
+  //background: black;
+  width: 320px;
+  position: relative;
+  align-content: center;
+}
+
+#display {
+  width: 100%;
+  height: $button-height;
+  background-color: #dfdfdf;
+}
+
+button {
+  position: relative;
+  height: $button-height;
+  width: $button-width;
+  color: #7b7979;
+  outline: 1px solid #7b7979;
+  border: none;
+  background-color: #f0f0f0;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: default;
+
+  &:hover {
+    color: black;
+    outline: .05em solid grey;
+    z-index: 3;
+  }
+}
+
+#clear, #zero {
+  width: $button-width*2;
+}
+#equals{
+  height: $button-height*2;
+  position: absolute;
+  bottom: 0;
+}
